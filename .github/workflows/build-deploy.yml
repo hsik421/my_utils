@@ -20,7 +20,7 @@ jobs:
         run: flutter pub get
 
       - name: Build web app
-        run: flutter build web  # --base-href "/<repository-name>/" 여기에 본인의 리포지토리 이름을 입력하세요.
+        run: flutter build web --base-href "/my_utils/" # 여기에 본인의 리포지토리 이름을 입력하세요.
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
