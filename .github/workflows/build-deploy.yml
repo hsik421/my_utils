@@ -1,0 +1,29 @@
+name: Deploy Flutter Web to GitHub Pages
+
+on:
+  push:
+    branches: [ main ] # main 브랜치에 푸시될 때 실행됩니다.
+
+jobs:
+  build_and_deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          channel: 'stable' # 안정적인 최신 버전을 사용합니다.
+
+      - name: Install dependencies
+        run: flutter pub get
+
+      - name: Build web app
+        run: flutter build web  # --base-href "/<repository-name>/" 여기에 본인의 리포지토리 이름을 입력하세요.
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.MY_UTILS_KEY }}
+          publish_dir: ./build/web
