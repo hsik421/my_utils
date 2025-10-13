@@ -1,5 +1,7 @@
 name: Deploy Flutter Web to GitHub Pages
 
+permissions:
+  contents: write
 on:
   push:
     branches: [ main ] # main 브랜치에 푸시될 때 실행됩니다.
