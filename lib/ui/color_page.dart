@@ -52,7 +52,7 @@ class _ColorPageState extends State<ColorPage>{
                         )
                       ],
                     ),
-                    Text("ex)\nhex : 6,8 length \nrgb : XXX,XXX,XXX\nargb : XXX,XXX,XXX,XXX"),
+                    Text('ex)\nhex : 6,8 length \nrgb : XXX,XXX,XXX\nargb : XXX,XXX,XXX,XXX'),
                     Container(
                       padding: EdgeInsets.all(10.0),
                       margin: EdgeInsets.only(top: 10.0,bottom: 10.0),
