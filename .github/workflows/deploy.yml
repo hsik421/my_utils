@@ -31,7 +31,7 @@ jobs:
         run: flutter pub get
 
       - name: Build Flutter Web
-        run: flutter build web --base-href "/my_tuils/"
+        run: flutter build web --base-href "/my_utils/"
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
