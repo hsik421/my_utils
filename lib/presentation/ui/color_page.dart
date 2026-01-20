@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:my_utils/viewmodels/color_viewmodel.dart';
+import 'package:my_utils/presentation/viewmodels/color_viewmodel.dart';
 import 'package:provider/provider.dart';
 
 class ColorPage extends StatefulWidget {

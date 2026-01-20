@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:my_utils/data/model/convert_model.dart';
-import 'package:my_utils/viewmodels/convert_viewmodel.dart';
+import 'package:my_utils/data/models/convert_model.dart';
+import 'package:my_utils/presentation/viewmodels/convert_viewmodel.dart';
 import 'package:provider/provider.dart';
 
 class ConvertPage extends StatefulWidget {

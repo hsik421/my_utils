@@ -1,4 +1,4 @@
-import 'package:my_utils/data/model/convert_model.dart';
+import 'package:my_utils/data/models/convert_model.dart';
 import 'package:flutter/foundation.dart';
 
 class ConvertViewModel extends ChangeNotifier {

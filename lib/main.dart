@@ -1,6 +1,7 @@
-import 'package:my_utils/ui/color_page.dart';
 import 'package:flutter/material.dart';
-import 'package:my_utils/ui/convert_page.dart';
+import 'package:my_utils/presentation/ui/convert_page.dart';
+import 'package:my_utils/presentation/ui/color_page.dart';
+import 'package:my_utils/presentation/ui/list_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -22,6 +23,7 @@ class MyApp extends StatelessWidget {
       routes: {
         '/convert': (context) => const ConvertPage(),
         '/color': (context) => const ColorPage(),
+        '/list': (context) => const ListPage(),
       },
     );
   }
@@ -48,6 +50,11 @@ class HomePage extends StatelessWidget {
             ElevatedButton(
               onPressed: () => Navigator.pushNamed(context, '/color'),
               child: const Text('Go to Color Page'),
+            ),
+            const SizedBox(height: 16),
+            ElevatedButton(
+              onPressed: () => Navigator.pushNamed(context, '/list'),
+              child: const Text('Go to list Page'),
             ),
           ],
         ),

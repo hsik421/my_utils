@@ -1,6 +1,6 @@
 
 import 'package:flutter/foundation.dart';
-import 'package:my_utils/data/model/color_model.dart';
+import 'package:my_utils/data/models/color_model.dart';
 
 class ColorViewModel extends ChangeNotifier{
 
